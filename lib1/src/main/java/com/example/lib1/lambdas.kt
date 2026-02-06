@@ -1,6 +1,6 @@
 package com.example.lib1
 
-val numberIsGreaterThanTen: (Int) -> Boolean = { number -> number >= 10 }
+val numberIsGreaterThanTenTest1: (Int) -> Boolean = { number -> number >= 10 }
 
 
 
@@ -17,7 +17,7 @@ val even = numbers.filter { it % 2 == 0 }
 val isGreaterThanFive = numbers.filter { it >= 5 }
 
 val words = listOf("kotlin", "java", "compose")
-val allWords = words.map { it.uppercase() }
+val allWords = words.map { str -> str.uppercase() + "str1"}
 
 fun repeatAction(times: Int, action: () -> Unit) {
     repeat(times) {
@@ -26,9 +26,9 @@ fun repeatAction(times: Int, action: () -> Unit) {
 }
 
 fun main() {
-    println(numberIsGreaterThanTen(5))
-    println(numberIsGreaterThanTen(20))
-    println(numberIsGreaterThanTen(10))
+    println(numberIsGreaterThanTenTest1(5))
+    println(numberIsGreaterThanTenTest1(20))
+    println(numberIsGreaterThanTenTest1(10))
 
     println(result)
     println(result1)
@@ -42,3 +42,5 @@ fun main() {
         println("Hello")
     }
 }
+
+
