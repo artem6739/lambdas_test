@@ -2,7 +2,7 @@ package com.example.lib1
 
 import kotlinx.coroutines.*
 
-
+//Task 1: Your First Coroutine
 fun main() = runBlocking {
     println("start")
 
@@ -13,6 +13,8 @@ fun main() = runBlocking {
 
     println("end")
 
+    //Task 2: Delay vs Thread.sleep
+
     println("before delay")
 
     launch {
@@ -20,6 +22,8 @@ fun main() = runBlocking {
 
     }
     println("after delay")
+
+    //Task 3: Multiple Coroutines
 
     launch {
         delay(5000)
