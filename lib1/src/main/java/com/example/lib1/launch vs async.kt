@@ -16,14 +16,17 @@ launch {
     }
     println("result = ${result.await()}")
 
+
     fun simpleFlow(): Flow<Int> = flow {
         for (i in 1..3) {
             delay(100)
             emit(i)
         }
-        simpleFlow().collect { value ->
-            println("got $value")
+
         }
+    simpleFlow().collect { value ->
+        println("got $value")
     }
+
 }
 
